@@ -1,5 +1,3 @@
-// Editor.js (Updated with button color and cursor effects)
-
 import React, { useState, useEffect } from 'react';
 import { Box, VStack, HStack, Select, Button, Textarea, Text, useColorModeValue, List, ListItem, ListIcon } from '@chakra-ui/react';
 import { FaPlay, FaCheck, FaTimes } from 'react-icons/fa';
@@ -120,7 +118,7 @@ const Editor = () => {
         <Button leftIcon={<FaPlay />} colorScheme="red" onClick={handleRun} _hover={{ cursor: 'pointer' }}>Run</Button>
         <Button leftIcon={<FaCheck />} colorScheme="green" onClick={handleSubmit} _hover={{ cursor: 'pointer' }}>Submit</Button>
       </HStack>
-      <Box borderWidth={1} borderRadius="md" overflow="hidden" w="100%" mb={4}>
+      <Box borderWidth={1} borderRadius="md" overflow="hidden" w="100%" maxH="400px" mb={4}>
         <AceEditor
           mode={language === 'cpp' ? 'c_cpp' : language}
           theme={useColorModeValue('github', 'monokai')}
@@ -136,7 +134,7 @@ const Editor = () => {
             tabSize: 2,
           }}
           width="100%"
-          height="400px"
+          height="300px"
           fontSize={16}
         />
       </Box>
@@ -152,7 +150,7 @@ const Editor = () => {
           w="100%"
         />
         <Text fontWeight="bold" mb={2} color={textColor}>Output:</Text>
-        <Box p={4} borderWidth={1} borderRadius="md" bg={inputBgColor} mb={4} w="100%">
+        <Box p={4} borderWidth={1} borderRadius="md" bg={inputBgColor} maxH="200px" overflowY="auto" mb={4} w="100%">
           <Text fontFamily="monospace" whiteSpace="pre-wrap" color={textColor}>{output}</Text>
         </Box>
         {testResults.length > 0 && (

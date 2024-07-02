@@ -65,7 +65,7 @@ const Footer = () => {
           justify={{ md: 'space-between' }}
           align={{ md: 'center' }}
         >
-          <Text>© 2024 AlgoSprint. All rights reserved</Text>
+          <Text></Text>
           <Stack direction={'row'} spacing={6}>
             <Link href={'#'}>Privacy Policy</Link>
             <Link href={'#'}>Terms of Use</Link>

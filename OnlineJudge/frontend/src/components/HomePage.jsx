@@ -18,11 +18,6 @@ import {
 } from '@chakra-ui/react';
 import Marquee from 'react-fast-marquee';
 import HomeCard from '../components/HomeCard';
-import G_logo from '../assets/google_logo.jpeg'
-import Micro_logo from '../assets/microsoft_logo.jpeg'
-import Meta_logo from '../assets/meta_logo.jpeg'
-import Amazon_logo from '../assets/amazon_logo.jpeg'
-import Netflix_logo from '../assets/netflix_logo.jpeg'
 import Homeback1 from '../assets/home_back1.jpeg'
 import Homeback2 from '../assets/home_back2.jpeg'
 import Homeback3 from '../assets/home_back3.jpeg'
@@ -30,14 +25,7 @@ import Homeback4 from '../assets/home_back4.jpeg'
 
 
 
-const companyLogos = [
-  { name: 'Company 1', logo: G_logo, link: 'https://company1.com' },
-  { name: 'Company 2', logo: Micro_logo, link: 'https://company2.com' },
-  { name: 'Company 3', logo: Meta_logo, link: 'https://company3.com' },
-  { name: 'Company 4', logo: Amazon_logo, link: 'https://company4.com' },
-  { name: 'Company 5', logo: Netflix_logo, link: 'https://company5.com' },
-  // Add more company logos here
-];
+
 
 const popularCourses = [
   { title: 'Binary tree', image: Homeback1, link: '/course/Binary tree' ,deadline: '2024-05-15', Noofquestions: '10', Nooftimesasked: '4' },
@@ -69,24 +57,7 @@ const HomePage = () => {
           
         </Heading>
 
-        {/* <Box>
-          <Marquee speed={50} gradient={false}>
-            {companyLogos.map((company, index) => (
-              <Link key={index} href={company.link} isExternal mx={4}>
-                <Image src={company.logo} alt={company.name} h="50px" objectFit="contain" />
-              </Link>
-            ))}
-          </Marquee>
-        </Box> */}
-{/* 
-        <Heading as="h2" size="xl">
-          Topics To Cover Today
-        </Heading>
-        <SimpleGrid columns={[1, 2, 3, 4]} spacing={6}>
-          {popularCourses.map((course, index) => (
-            <HomeCard key={index} {...course} />
-          ))}
-        </SimpleGrid> */}
+      
         <Heading as="h2" size="xl">
         Topics To Cover Today
         </Heading>

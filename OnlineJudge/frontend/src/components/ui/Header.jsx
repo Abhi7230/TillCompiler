@@ -151,13 +151,13 @@ const Header = () => {
         margin="0 auto"
       >
         <Flex align="center" mr={5}>
-          <Image
-            borderRadius="full"
-            boxSize="40px"
-            src={algologo}
-            alt="AlgoSprint Logo"
-            mr={3}
-          />
+            {/* <Image
+              borderRadius="full"
+              boxSize="40px"
+              src={algologo}
+              alt="AlgoSprint Logo"
+              mr={3}
+            /> */}
          <RouterLink to='/home'>
          <Text fontSize="xl" fontWeight="bold" color="#127d7e">
             Welcome
@@ -172,21 +172,7 @@ const Header = () => {
             placement="bottom"
             matchWidth
           >
-            {/* <PopoverTrigger>
-              <InputGroup>
-                <InputLeftElement pointerEvents="none">
-                  <SearchIcon color="gray.300" />
-                </InputLeftElement>
-                <Input
-                  ref={searchInputRef}
-                  type="text"
-                  placeholder="Search topics..."
-                  onChange={handleSearch}
-                  borderColor={borderColor}
-                  _focus={{ borderColor: 'blue.500', boxShadow: '0 0 0 1px #3182ce' }}
-                />
-              </InputGroup>
-            </PopoverTrigger> */}
+           
             <PopoverContent borderColor={borderColor}>
               <PopoverBody padding={0}>
                 <List spacing={0}>

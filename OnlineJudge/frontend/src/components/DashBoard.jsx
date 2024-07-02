@@ -98,10 +98,10 @@ const Dashboard = () => {
   ];
 
   const streakData = [
-    { date: '2023-10-18', count: 1 },
-    { date: '2023-11-17', count: 1 },
-    { date: '2023-01-16', count: 0 },
-    { date: '2023-06-15', count: 1 },
+    { date: '2024-11-12', count: 1 },
+    { date: '2024-9-1', count: 1 },
+    { date: '2024-01-19', count: 0 },
+    { date: '2024-06-15', count: 1 },
     // Add more data here
   ];
 
