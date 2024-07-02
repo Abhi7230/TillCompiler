@@ -1,0 +1,13 @@
+body {
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.chakra-ui-light {
+  background-color: #ffffff;
+  color: #1A202C;
+}
+
+.chakra-ui-dark {
+  background-color: #1A202C;
+  color: #FFFFFF;
+}
