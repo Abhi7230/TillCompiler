@@ -1,4 +1,4 @@
-This is an Online Judge Project made till the Online Compiler rest of the project is yet to be uploaded. 
+This is an online judge Project made till the Online Compiler rest of the project is yet to be uploaded. 
 Thank you
 I have made separate git repos for every step.
 https://github.com/Abhi7230/Authfrontend_and_backend -Authorization
